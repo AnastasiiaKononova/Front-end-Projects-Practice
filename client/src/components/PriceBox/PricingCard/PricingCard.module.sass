@@ -1,0 +1,143 @@
+.card
+  max-width: 262px
+  width: 100%
+  margin: 3.75rem auto
+  &:last-child
+    li
+      border-bottom: none
+
+.topBox
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  font-family: 'Raleway', sans-serif
+  padding: 16px
+  margin-bottom: 15px
+  border: 10px solid
+  cursor: pointer
+  opacity: 0.9
+  min-height: 163px
+  background-color: #fff
+  position: relative
+  transition: box-shadow 0.3s ease  
+  
+  &:hover
+    box-shadow: 0 8px 16px #b2b2b2
+    opacity: 1
+
+  &[data-border="bronze"]
+    border-color: #e0b48d
+
+  &[data-border="gold"]
+    border-color: #e8b954
+
+  &[data-border="platinum"]
+    border-color: #555
+
+  &[data-border="managed"]
+    border-color: #28d2d0
+  
+.headerCard
+  font-size: 33px
+  font-weight: 700
+  line-height: 1.1
+  margin-bottom: 10px
+
+.describeTopBox
+  font-size: 16px
+  font-weight: 500
+  color: #666
+  line-height: 1.4
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: 3
+  max-height: 67px
+  
+.price
+  font-size: 28px
+  font-weight: 600
+  text-align: right
+  margin-top: auto
+
+.benefitItem
+  position: relative
+  font-family: 'Raleway',sans-serif
+  font-size: 15px
+  line-height: 1.4
+  font-weight: 500
+  color: #333
+  padding: 13px 0
+  border-bottom: 2px solid #ddd
+
+
+.benefit
+    cursor: pointer
+    position: relative
+    font-size: inherit
+    &:hover + .tooltip
+        display: block
+
+.tooltip
+  background: #fff
+  z-index: 10
+  font-size: 12px
+  min-width: 100px
+  display: none
+  border: 1px solid #ccc
+  border-radius: 0.2rem
+  line-height: 1.5
+  padding: 0.5rem
+  position: absolute
+  top: 0
+  left: 100%
+
+
+.profitList
+  cursor: pointer
+  & > li
+    &:last-child
+      border-bottom: none
+
+.profitList > li  > ul
+  .benefitItem
+    box-sizing: border-box
+    border-bottom: none
+    padding: 0.25rem 0
+    font-size: 13px
+    padding-left: 0.5rem
+
+    .benefit
+      padding-left: 1rem
+      
+      &:before 
+        content: "\f00c"
+        font-weight: 900
+        font-size: 0.5rem
+        font-family: "Font Awesome 5 Free"
+        position: absolute
+        left: 0
+        top: calc(50% - 0.35rem)
+    
+
+
+.cardButton
+  width: 100%
+  text-align: center
+  cursor: pointer
+  font-size: 17px
+  font-weight: 700
+  line-height: 2.6
+  border: 2px solid
+  border-radius: 5px
+  color: #fff
+
+ 
+
+
+
+
+
+    
+ 

@@ -1,0 +1,66 @@
+.pricingSelect
+  padding-top: 40px
+  padding-bottom: 10%
+
+  label
+    font-size: 38px
+    font-weight: 700
+    line-height: 1.3
+    letter-spacing: 0
+    color: #555
+
+  select
+    display: none
+
+  .customSelectBox
+    display: inline-block
+    position: relative
+    width: 250px
+    margin: 0 1rem
+
+    .customSelectButton
+      font-size: 38px
+      font-weight: 700
+      padding: 3px 40px 3px 15px
+      width: 100%
+      color: #fff
+      background: #28d2d0
+      border-radius: 5px
+      border: solid 1px #bfbfbf
+      text-align: left
+      position: relative
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+      cursor: pointer
+      transition: background-color 0.3s, border-color 0.3s
+
+      &:hover
+        background: #1b9f9e
+        border-color: #a6a6a6
+
+      i
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+
+    ul
+      position: absolute
+      left: 0
+      padding: 0
+      margin: 0
+      list-style: none
+      z-index: 10
+
+      li
+        padding: 0 15px
+        background: #666
+        font-size: 15px
+        line-height: 25px
+        cursor: pointer
+        color: #fff
+        opacity: 90%
+
+        &.selected
+          background: #28d2d0

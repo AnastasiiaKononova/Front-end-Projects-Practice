@@ -1,6 +1,6 @@
-const env = process.env.NODE_ENV || 'development'
-const serverIP = 'localhost'
-const serverPort = 5000
+const env = process.env.NODE_ENV || 'development';
+const serverIP = 'localhost';
+const serverPort = 5000;
 export default {
   CUSTOMER: 'customer',
   CREATOR: 'creator',
@@ -39,12 +39,12 @@ export default {
     'a Business',
     'an App',
     'a Product',
-    'a Startup'
+    'a Startup',
   ],
   FooterItems: [
     {
       title: 'SQUADHELP',
-      items: ['About', 'Contact', 'How It Works?', 'Testimonials', 'Our Work']
+      items: ['About', 'Contact', 'How It Works?', 'Testimonials', 'Our Work'],
     },
     {
       title: 'RESOURCES',
@@ -56,8 +56,8 @@ export default {
         'Blog',
         'Download eBook',
         'Pricing',
-        'Help & FAQs'
-      ]
+        'Help & FAQs',
+      ],
     },
     {
       title: 'OUR SERVICES',
@@ -69,12 +69,33 @@ export default {
         'Creative Owned Names For Sale',
         'Audience Testing',
         'Trademark Research & Filling',
-        'Managed Agency Service'
-      ]
+        'Managed Agency Service',
+      ],
     },
     {
       title: 'LEGAL',
-      items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy']
-    }
-  ]
-}
+      items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
+    },
+  ],
+  PRICING_COLORS: {
+    BRONZE: '#e0b48d',
+    GOLD: '#e8b954',
+    PLATINUM: '#555',
+    MANAGED: '#28d2d0',
+  },
+  CONTEST_TYPES: {
+    NAME: 'Name',
+    LOGO: 'Logo',
+    TAGLINE: 'Tagline',
+    NAME_AND_LOGO: 'Name and Logo',
+    NAME_AND_TAGLINE: 'Name and Tagline',
+    NAME_TAGLINE_AND_LOGO: 'Name, Tagline and Logo',
+    NAME_LOGO_AND_BUSINESS_CARDS: 'Name, Logo and Business Cards',
+    LOGO_AND_BUSINESS_CARDS: 'Logo and Business Cards',
+    LOGO_BUSINESS_CARDS_AND_STATIONERY: 'Logo, Business Cards and Stationery',
+    LOGO_AND_TAGLINE: 'Logo and Tagline',
+    BUSINESS_CARDS: 'Business Cards',
+    STATIONERY: 'Stationery',
+    PRODUCT_FEEDBACK_AND_RESEARCH: 'Product Feedback and Research',
+  },
+};
