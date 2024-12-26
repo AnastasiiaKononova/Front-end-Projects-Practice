@@ -100,7 +100,6 @@
         p
           margin-right: 10px
 
-
   .adv
     display: flex
     flex-direction: row
@@ -143,7 +142,6 @@
           max-height: 20px
           max-width: 70px
           margin: 0 30px
-
 
   .stats
     display: flex
@@ -300,6 +298,44 @@
   @include innerContainer
   background-color: #28D2D0
 
+.readyToStartContainer
+  width: 100%
+  
+  
+.readyToStartContent
+  box-sizing: border-box
+  margin: 30px auto
+  width: 100% 
+  max-width:  1140px
+  padding: 30px 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: linear-gradient(45deg, #359cff, #530093)
+  color: white
+  gap: 10px
+  @media screen and (max-width: 800px) 
+    flex-direction: column
+    align-items: flex-start
+
+  a
+    background-color: white
+    text-decoration: none
+    padding: 15px
+    &:visited
+      color: #222222
+    &:hover
+      background-color: #5037ba
+      color: #ffffff
+    
+  
+  i
+    color: black
+    font-weight: 300
+    margin-right: 15px
+    
+
+
 .blueContainer
   @include innerContainer
   background-color: #2B62EC
@@ -411,3 +447,95 @@
     background-color: #28D2D1
 
 
+.extraBenefitsContainer
+  box-sizing: border-box
+  margin: 30px auto
+  width: 100% 
+  max-width:  1170px
+  padding: 15px 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  gap: 1rem
+
+.wrapperDescription
+  box-sizing: border-box
+  flex-direction: column
+  max-width: calc(702px - 1rem)
+  padding: 40px 0
+  & > div
+    border-bottom: 1px solid #ccc
+    margin-bottom: 20px
+  
+  & > div:last-child
+    border-bottom: none
+    margin-bottom: auto
+
+  
+.iconRight
+  border-radius: 50%
+  background-color: #574aff
+  color: #eaf0ff
+  
+.wrapperContacts
+  box-sizing: border-box
+  max-width: calc(468px - 1rem)
+  display: flex
+  flex-direction: column
+  background-color: #574aff
+  padding: 50px
+  color: #ffffff
+  
+.titleExtraBenefits
+  font-family:  Raleway, sans-serif
+  font-size: 30px
+  font-weight: 500
+  margin-bottom: 20px
+
+.withIcon
+  position: relative
+  padding-left: 40px
+  .iconRight
+    position: absolute
+    left: 0
+
+
+.describeExtraBenefits
+  font-family:  Raleway, sans-serif
+  font-size: 18px
+  font-weight: 400
+  margin-bottom: 20px
+  line-height: 1.4
+  
+.paddingLeft
+  padding-left: 40px
+
+.linkMore
+  text-decoration: none
+  color: #574aff
+  &:hover
+    color: #530093
+    
+
+.btnShedule
+  width: 60%
+  border: none
+  border-radius: 20px
+  padding: 10px
+  color: #574aff
+  margin-bottom: 20px
+  text-align: center
+  font-family:  Raleway, sans-serif
+  font-size: 18px
+  &:hover
+    background-color: #5037ba
+    color: #ffffff
+  
+
+.phoneLink 
+  text-decoration: none
+  color: #ffffff
+  margin-bottom: 10px
+ 
+
+  
